@@ -62,3 +62,6 @@ using namespace std;
     }
 
  }
+
+
+//The code prints one possible solution in 2D matrix form , the output is a 2D 8*8 matrix with numbers from 0 to 63 and these numbers show steps made by Knight.

@@ -1,4 +1,4 @@
-## Competitive Code Samples
+## Competitive Programming Resources
 
 This repository is aimed at welcoming beginners to the open source community. 
 <br><br>

@@ -1,3 +1,10 @@
+/* Catalan Number : Catalan numbers are a sequence of natural numbers that occurs in many interesting counting problems like following.
+                    1) Count the number of expressions containing n pairs of parentheses which are correctly matched. For n = 3, possible expressions are ((())), ()(()), ()()(), (())(), (()()).
+                    2) Count the number of possible Binary Search Trees with n keys etc.
+		    The first few Catalan numbers for n = 0, 1, 2, 3, … are 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, …
+
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -22,3 +29,9 @@ int main()
 		cout << catalan(i) << " ";
 	return 0;
 }
+
+/*
+Sample input : 10
+Output :1 1 2 5 14 42 132 429 1430 4862
+
+*/

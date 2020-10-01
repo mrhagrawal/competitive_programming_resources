@@ -2,7 +2,7 @@
 using namespace std;
 typedef long long int ll;
 vector<ll>v[100005],rv[100005];
-stack<int>s ;
+stack<int>s ; 
 queue<ll>q;
 ll visited[100005]={0};
 ll visited1[100005]={0};
@@ -33,7 +33,7 @@ void dfs1(ll u)
 }
 
 
-void dfs(ll u)
+void dfs(ll u) // dfs function
 {
     ll i;
     visited[u]=1;
@@ -45,7 +45,7 @@ void dfs(ll u)
     s.push(u);
 }
 
-ll solvedist(ll u)
+ll solvedist(ll u) // main function
 {
     ll i;
     for(i=0;i<100005;i++)

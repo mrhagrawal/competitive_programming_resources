@@ -8,7 +8,8 @@ ll visited[100005]={0};
 ll visited1[100005]={0};
 ll recstack[1003]{0};
 ll dist[100005];
-void transpose(ll n)
+
+void transpose(ll n)   // transpose function
 {
     ll i,j;
     for(i=1;i<=n;i++)
@@ -20,9 +21,11 @@ void transpose(ll n)
     }
 }
 
+
 void dfs1(ll u)
 {
-    ll i;
+
+    ll i,x;
     visited1[u]=1;
     //cout<<u<<" ";
     for(i=0;i<rv[u].size();i++)
@@ -35,7 +38,7 @@ void dfs1(ll u)
 
 void dfs(ll u) // dfs function
 {
-    ll i;
+    ll i,x;
     visited[u]=1;
     for(i=0;i<v[u].size();i++)
     {
@@ -79,7 +82,7 @@ ll solvedist(ll u) // main function
 
 int main()
 {
-    ll n,m,i,j,k,l,u,vx,x,y,c=0,flag=0;
+    ll n,m,i,j,k,l,u,vx,x,y,c=0,flag=0; // taking input
     cin>>n>>m;
 
     for(i=0;i<m;i++)

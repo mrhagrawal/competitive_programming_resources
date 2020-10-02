@@ -44,7 +44,7 @@ using namespace std;
 
  int main()
  {
-    int board[8][8]={0},row=0,col=0;
+    int board[8][8]={0},row=0,col=0;  // board is the chessboard of size 8*8
 
     board[0][0]=1;
 

@@ -1,0 +1,1 @@
+This folder is for maintaining compiled set of good questions collection so that we can share whgat we learn. Please try to maintain directory structure while submitting PR by creating or using pre-existing sub-folders.

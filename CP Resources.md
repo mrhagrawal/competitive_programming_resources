@@ -39,7 +39,7 @@
 
 - https://codeforces.com/blog/entry/13529 (Blog post on good resources in DS/Algo)
 - https://codeforces.com/blog/entry/57282 (Another list of good tutorials for CP)
-
+- http://algoshots.herokuapp.com/ (A platform where user can search CF questions based on difficulty tags)
 
 
 ## Roadmap

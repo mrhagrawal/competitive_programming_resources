@@ -4,7 +4,13 @@ using namespace std;
  //knight problem
  //username-Mohit-2304
 
- bool can_place(int row,int col,int board[8][8])
+
+//Backtracking algorithm for Knight’s tour problem
+// problem can also be solved by naive algorithm but backtracking gives a better solution 
+
+//Please Note : The knight is placed on the first block of an empty board and, moving according to the rules of chess, must visit each square exactly once
+ 
+bool can_place(int row,int col,int board[8][8])
  {
      return row<8&&col<8&&row>=0&&col>=0&&board[row][col]==0;
  }
@@ -44,7 +50,7 @@ using namespace std;
 
  int main()
  {
-    int board[8][8]={0},row=0,col=0;
+    int board[8][8]={0},row=0,col=0;  // board is the chessboard of size 8*8
 
     board[0][0]=1;
 
@@ -62,3 +68,6 @@ using namespace std;
     }
 
  }
+
+
+//The code prints one possible solution in 2D matrix form , the output is a 2D 8*8 matrix with numbers from 0 to 63 and these numbers show steps made by Knight.

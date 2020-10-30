@@ -1,12 +1,15 @@
-//jatiny17
 //Jatin Kumar
+//jatiny17
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
+
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL); 
 
 //n-queen problem
 
-bool canplace(int board[10][10],int n,int row,int col)
+// Function for checking if a queen could be placed on a position (row ,col) without getting in line with other already placed queens
+bool canplace(vector< vector<int> >&board,int n,int row,int col)
 {
     for(int i=0;i<row;i++)
     {
@@ -39,7 +42,8 @@ bool canplace(int board[10][10],int n,int row,int col)
     return true;
 }
 
-bool queen(int board[10][10],int n,int row)
+// recursive fcuntion for generating a permutation of the n queens 
+bool queen(vector< vector<int> >&board,int n,int row)
 {
     if(row==n)
     {
@@ -67,9 +71,23 @@ bool queen(int board[10][10],int n,int row)
 
 int main()
 {
-    int board[10][10]={0},n;
+    fast;
+    
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif   
 
+    int n;
     cin>>n;
+
+    if(n<=0)
+    {
+        cout<<"Enter a legitimate size of the board (>=1)\n";
+        return 0;
+    }
+
+    vector< vector<int> > board(n, vector<int> (n,0));
 
     bool check=queen(board,n,0);
 

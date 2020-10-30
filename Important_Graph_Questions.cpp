@@ -83,13 +83,13 @@ class Solution
         
         for(auto e:adj[child])
         {
-            if(vis[e] == 0)
+            if(vis[e] == 0) // if it is not visited
             {
-                if(util(vis,col,e,!c)==0)
+                if(util(vis,col,e,!c)==0) // just give it different col value then parent 
                 return false;
             }
             
-            else if(col[e] == col[child] )
+            else if(col[e] == col[child] ) // if it is visited and col value is same as parent then it is not possible
             return false;
         }
         
@@ -350,7 +350,7 @@ class graph
 		for(int i=0;i<v;i++)
 		{ dist[i] = INT_MAX;   parent[i] = -1;   inMst[i] = 0; }
 			
-		priority_queue<pair<int,int>,vector<pair<int,int> > , greater<pair<int,int> >> pq;
+		priority_queue<pair<int,int>,vector<pair<int,int> > , greater<pair<int,int> >> pq; // making heap
 		
 		int src = 0;             // We delibrately select source node in prims algorithm
 		dist[src] = 0;
@@ -435,7 +435,7 @@ class graph
 
 	void dijkstra(int src) // In Djiktras we are given with the source node 
 	{
-		priority_queue<pr,vector<pr>,greater<pr>> pq;
+		priority_queue<pr,vector<pr>,greater<pr>> pq; // making min heap 
 		vector<int> dist(v,INT_MAX);
 		
 		dist[src] = 0;

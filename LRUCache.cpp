@@ -1,12 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// in this we use map and list 
+
+
+
 class LRUCache
 {
     int c=0;
-    list<pair<int,int>> l;
-    unordered_map<int,list<pair<int,int>>::iterator> m;
-
+    list<pair<int,int>> l;  // list is use to create cache
+    unordered_map<int,list<pair<int,int>>::iterator> m;  // map is use to store the location
+    
     public:
     LRUCache(int capacity)
     {
